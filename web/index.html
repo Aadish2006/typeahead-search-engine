@@ -1,0 +1,41 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Smart Search - Typeahead Engine</title>
+  </head>
+  <link rel="stylesheet" href="./styles.css" />
+  <body>
+    <!-- Show query information -->
+    <div id="query-information" class="">50</div>
+
+    <!-- Search bar input and icon -->
+    <div class="input-wrapper">
+      <input
+        id="search-bar-input"
+        placeholder="Search and get instant suggestions"
+      />
+      <svg
+        id="search-bar-icon"
+        xmlns="http://www.w3.org/2000/svg"
+        width="20"
+        height="20"
+        viewBox="0 0 24 24"
+        fill="none"
+        stroke="currentColor"
+        stroke-width="2"
+        stroke-linecap="round"
+        stroke-linejoin="round"
+      >
+        <circle cx="11" cy="11" r="7" />
+        <path d="m20 20-3.5-3.5" />
+      </svg>
+    </div>
+
+    <!-- Suggestions list -->
+    <ul id="suggestion-list" class="visible"></ul>
+
+    <script src="./app.js"></script>
+  </body>
+</html>
